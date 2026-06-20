@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kavin Raju | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e1b4b,#312e81);
+    color:white;
+    overflow-x:hidden;
+}
+
+body.light{
+    background:#f4f4f4;
+    color:#111;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    position:sticky;
+    top:0;
+    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,0.08);
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:50px;
+}
+
+.hero-content{
+    display:flex;
+    align-items:center;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.profile{
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    overflow:hidden;
+    border:5px solid #38bdf8;
+    box-shadow:0 0 40px #38bdf8;
+}
+
+.profile img{
+    width:100%;
+    height:130%;
+    object-fit:cover;
+}
+
+.hero-text h1{
+    font-size:60px;
+}
+
+.hero-text span{
+    color:#38bdf8;
+}
+
+.hero-text p{
+    margin-top:15px;
+    max-width:600px;
+    line-height:1.8;
+}
+
+.typing{
+    color:#c084fc;
+    font-size:24px;
+    margin-top:10px;
+    font-weight:600;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    color:white;
+    background:linear-gradient(45deg,#38bdf8,#8b5cf6);
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+section{
+    padding:100px 10%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:40px;
+    color:#38bdf8;
+}
+
+.glass{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.skill{
+    text-align:center;
+    padding:20px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.08);
+    transition:.3s;
+}
+
+.skill:hover{
+    transform:translateY(-10px);
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project{
+    padding:25px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.08);
+    transition:.3s;
+}
+
+.project:hover{
+    transform:translateY(-10px);
+}
+
+.certificate-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.certificate-card{
+    background:rgba(255,255,255,0.08);
+    padding:20px;
+    border-radius:20px;
+    text-align:center;
+    transition:.3s;
+}
+
+.certificate-card:hover{
+    transform:translateY(-10px);
+}
+
+.certificate-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+/* ✅ SOCIAL LINKS ADDED */
+.social-links{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:25px;
+}
+
+.social-links a{
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    text-decoration:none;
+    color:white;
+
+    padding:12px 22px;
+    border-radius:50px;
+
+    background:linear-gradient(45deg,#38bdf8,#8b5cf6);
+
+    font-weight:500;
+    transition:0.3s;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+.social-links a:hover{
+    transform:translateY(-5px) scale(1.05);
+    box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+
+.social-links i{
+    font-size:16px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}
+
+.toggle{
+    cursor:pointer;
+    padding:10px 18px;
+    border:none;
+    border-radius:20px;
+    background:#38bdf8;
+    color:white;
+}
+
+@media(max-width:768px){
+.hero-text h1{font-size:40px;}
+.profile{width:250px;height:250px;}
+.hero-content{text-align:center;justify-content:center;}
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+<div class="logo">KAVIN RAJU</div>
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+
+<button class="toggle" onclick="toggleMode()">Theme</button>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="profile">
+<img src="Kavin.jpg.png" alt="Kavin">
+</div>
+
+<div class="hero-text">
+<h1>Hi, I'm <span>Kavin Raju</span></h1>
+
+<div class="typing" id="typing"></div>
+
+<p>
+B.Tech Information Technology student at V.S.B College of Engineering Technical Campus.
+Passionate about Java, Python, Web Development, and building innovative software solutions.
+</p>
+
+<a href="#projects" class="btn">View Projects</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+<h2 class="title">About Me</h2>
+<div class="glass">
+<p>
+I am an Information Technology student with a strong interest in software development, problem solving, and modern web technologies. I enjoy creating projects that solve real-world problems and continuously improving my technical skills.
+</p>
+</div>
+</section>
+
+<section id="skills">
+<h2 class="title">Skills</h2>
+<div class="skills">
+<div class="skill">Java</div>
+<div class="skill">Python</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">SQL</div>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="title">Projects</h2>
+<div class="projects">
+<div class="project">
+<h3>Smart Online Exam Registration System</h3>
+<p>A web-based platform for exam registration.</p>
+</div>
+
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>Responsive personal portfolio website.</p>
+</div>
+</div>
+</section>
+
+<section id="certificates">
+<h2 class="title">Certificates</h2>
+
+<div class="certificate-container">
+
+<div class="certificate-card">
+<img src="internship.jpg" alt="Internship">
+<h3>Internship Certificate</h3>
+<a href="internship.jpg" class="btn">View</a>
+</div>
+
+<div class="certificate-card">
+<img src="certificate1.jpg" alt="Java">
+<h3>Java Certificate</h3>
+<a href="certificate1.jpg" class="btn">View</a>
+</div>
+
+<div class="certificate-card">
+<img src="certificate2.jpg" alt="Python">
+<h3>Python Certificate</h3>
+<a href="certificate2.jpg" class="btn">View</a>
+</div>
+
+</div>
+</section>
+
+<section id="education">
+<h2 class="title">Education</h2>
+<div class="glass">
+<h3>V.S.B College of Engineering Technical Campus</h3>
+<p>B.Tech – Information Technology</p>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="title">Contact Me</h2>
+
+<div class="glass contact">
+
+
+<!-- ✅ SOCIAL LINKS ADDED HERE -->
+<div class="social-links">
+
+<a href="mailto:kavinraju0108@gmail.com">
+<i class="fa-solid fa-envelope"></i> Email
+</a>
+
+<a href="https://github.com/Kavin8005" target="_blank">
+<i class="fa-brands fa-github"></i> GitHub
+</a>
+
+<a href="https://www.linkedin.com/in/kavin-raju-703395349/" target="_blank">
+<i class="fa-brands fa-linkedin"></i> LinkedIn
+</a>
+
+<a href="https://www.instagram.com/2k_kavin_kid/" target="_blank">
+<i class="fa-brands fa-instagram"></i> Instagram
+</a>
+
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Kavin Raju | Portfolio
+</footer>
+
+<script>
+const texts=[
+"Java Developer",
+"Python Programmer",
+"Web Developer",
+"IT Student"
+];
+
+let index=0;
+let charIndex=0;
+
+function typeEffect(){
+const typing=document.getElementById("typing");
+
+if(charIndex<texts[index].length){
+typing.textContent+=texts[index].charAt(charIndex);
+charIndex++;
+setTimeout(typeEffect,100);
+}
+else{
+setTimeout(()=>{
+typing.textContent="";
+charIndex=0;
+index=(index+1)%texts.length;
+typeEffect();
+},1500);
+}
+}
+
+typeEffect();
+
+function toggleMode(){
+document.body.classList.toggle("light");
+}
+</script>
+
+</body>
+</html>
