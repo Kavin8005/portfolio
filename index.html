@@ -137,6 +137,31 @@ section{
     border-radius:20px;
     padding:30px;
     box-shadow:0 0 20px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+/* 🎓 EDUCATION LAYOUT AND LINK STYLES */
+.education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.education-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+.education-link:hover .glass {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.15);
+}
+
+body.light .education-link {
+    color: #111;
 }
 
 .skills{
@@ -163,11 +188,16 @@ section{
     gap:25px;
 }
 
-/* ✅ PROJECT LINK STYLING ADDED */
 .project-link {
     text-decoration: none;
-    color: inherit;
+    color: white; 
     display: block;
+    transition: .3s;
+    border-radius: 20px;
+}
+
+body.light .project-link {
+    color: #111; 
 }
 
 .project{
@@ -178,9 +208,9 @@ section{
     height: 100%;
 }
 
-.project:hover{
+.project-link:hover .project {
     transform:translateY(-10px);
-    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.2);
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.15);
 }
 
 .certificate-container{
@@ -344,15 +374,13 @@ I am an Information Technology student with a strong interest in software develo
 </div>
 </a>
 
+<a href="javascript:void(0);" class="project-link" style="cursor: default;">
 <div class="project">
 <h3>Smart Online Exam Registration System</h3>
 <p>A web-based platform for exam registration.</p>
 </div>
+</a>
 
-<div class="project">
-<h3>Portfolio Website</h3>
-<p>Responsive personal portfolio website.</p>
-</div>
 </div>
 </section>
 
@@ -384,9 +412,22 @@ I am an Information Technology student with a strong interest in software develo
 
 <section id="education">
 <h2 class="title">Education</h2>
-<div class="glass">
-<h3>V.S.B College of Engineering Technical Campus</h3>
-<p>B.Tech – Information Technology</p>
+<div class="education-container">
+
+    <a href="https://vsbcetc.edu.in/" target="_blank" class="education-link">
+    <div class="glass">
+    <h3>V.S.B College of Engineering Technical Campus</h3>
+    <p>B.Tech – Information Technology</p>
+    </div>
+    </a>
+
+    <a href="https://www.justdial.com/Pollachi/Our-Lady-Of-Lourdes-Matriculation-Higher-Secondary-School-Rathinasabapathy-Puram/9999P4259-4259-181127223632-A8E2_BZDET" target="_blank" class="education-link">
+    <div class="glass">
+    <h3>LMHSS - Our Lady Of Lourdes Matriculation Higher Secondary School</h3>
+    <p>Higher Secondary / Secondary Education</p>
+    </div>
+    </a>
+
 </div>
 </section>
 
