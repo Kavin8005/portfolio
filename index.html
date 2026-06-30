@@ -7,7 +7,6 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- Font Awesome for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -164,15 +163,24 @@ section{
     gap:25px;
 }
 
+/* ✅ PROJECT LINK STYLING ADDED */
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .project{
     padding:25px;
     border-radius:20px;
     background:rgba(255,255,255,0.08);
     transition:.3s;
+    height: 100%;
 }
 
 .project:hover{
     transform:translateY(-10px);
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.2);
 }
 
 .certificate-container{
@@ -210,7 +218,6 @@ section{
     text-decoration:none;
 }
 
-/* ✅ SOCIAL LINKS ADDED */
 .social-links{
     display:flex;
     justify-content:center;
@@ -223,15 +230,11 @@ section{
     display:flex;
     align-items:center;
     gap:8px;
-
     text-decoration:none;
     color:white;
-
     padding:12px 22px;
     border-radius:50px;
-
     background:linear-gradient(45deg,#38bdf8,#8b5cf6);
-
     font-weight:500;
     transition:0.3s;
     box-shadow:0 4px 10px rgba(0,0,0,0.3);
@@ -333,10 +336,6 @@ I am an Information Technology student with a strong interest in software develo
 <section id="projects">
 <h2 class="title">Projects</h2>
 <div class="projects">
-<div class="project">
-<h3>Smart Online Exam Registration System</h3>
-<p>A web-based platform for exam registration.</p>
-</div>
 
 <a href="https://ai-second-brain-jvuy.onrender.com/" target="_blank" class="project-link">
 <div class="project">
@@ -344,6 +343,16 @@ I am an Information Technology student with a strong interest in software develo
 <p>An intelligent web application built to manage knowledge, notes, and information using AI support. Click to explore the live application.</p>
 </div>
 </a>
+
+<div class="project">
+<h3>Smart Online Exam Registration System</h3>
+<p>A web-based platform for exam registration.</p>
+</div>
+
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>Responsive personal portfolio website.</p>
+</div>
 </div>
 </section>
 
@@ -386,8 +395,6 @@ I am an Information Technology student with a strong interest in software develo
 
 <div class="glass contact">
 
-
-<!-- ✅ SOCIAL LINKS ADDED HERE -->
 <div class="social-links">
 
 <a href="mailto:kavinraju0108@gmail.com">
