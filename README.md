@@ -2,7 +2,7 @@
 
 Welcome to the repository for my personal portfolio website! This project showcases my skills, experience, the projects I've built, and how to get in touch with me.
 
-🔗 **Live Demo:** [View Live Site](https://kavin8005.github.io/portfolio) *(Update this link with your actual URL)*
+🔗 **Live Demo:** [View Live Site](https://kavin8005.github.io/portfolio)
 
 ---
 
