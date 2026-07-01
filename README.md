@@ -8,7 +8,7 @@ Welcome to the repository for my personal portfolio website! This project showca
 
 ## 👤 About Me
 
-Hello! I'm **[Your Name]**, a passionate **[Your Role, e.g., Full Stack Developer / Software Engineer / Student]** dedicated to building beautiful, functional, and user-centric digital experiences. 
+Hello! I'm **[KAVIN RAJU]**, a passionate **[Your Role, e.g., Full Stack Developer / Software Engineer / Student]** dedicated to building beautiful, functional, and user-centric digital experiences. 
 
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
